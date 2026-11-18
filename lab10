@@ -1,0 +1,44 @@
+# Lab 10 — Software Licensing
+
+**Name:** ____________________
+**Course:** CEP146
+**Date:** November 17, 2026
+
+## Exercise 1: Licensing Detective
+
+I have reviewed the licensing information provided in each GitHub repository. The permissions listed in the table below describe the software license declared by the repository; however, separate terms may apply to specific model weights, datasets, dependencies, or hosted services.
+
+| GitHub Project | License | Commercial Use Allowed? | Attribution Required? | Modification & Redistribution Allowed? | Special Requirements/Restrictions |
+|---|---|---:|---|---|---|
+| [scikit-learn](https://github.com/scikit-learn/scikit-learn/blob/main/COPYING) | BSD 3-Clause | Yes | Must retain copyright, license, and disclaimer notices in source and binary distributions; must not imply endorsement. | Yes | Must include required notices; provided "as is" without any warranties. |
+| [PyTorch](https://github.com/pytorch/pytorch/blob/main/LICENSE) | BSD-style (includes various third-party licenses) | Yes (for code under BSD-style terms) | Must retain copyright and license notices; must check notices for individual components. | Yes | Third-party components may have separate terms; always review these terms when distributing. |
+| [TensorFlow](https://github.com/tensorflow/tensorflow/blob/master/LICENSE) | Apache License 2.0 | Yes | Must provide a copy of the license; retain notices; mark modified files; include contents of the NOTICE file (if applicable). | Yes | Includes an explicit patent grant from contributors; the patent grant may terminate if a patent lawsuit is initiated against a contributor regarding their contribution. | |
+| [Microsoft FLAML](https://github.com/microsoft/FLAML/blob/main/LICENSE) | MIT | Yes | Copyright and license notices must be included in copies or substantial portions of the software. | Yes | Highly permissive; provided "as is," without any warranties. |
+| [Shark-ML/Shark](https://github.com/Shark-ML/Shark) | GNU LGPL (GPL text is also included in the repository) | Yes | Copyright/license notices must be retained, and license/source information must be provided upon request. | Yes | If a modified LGPL library is distributed, recipients must be able to replace or re-link it under the terms of the LGPL. Programs using the library may generally be licensed under other terms, provided the LGPL conditions are met. Please check specific files and components. |
+
+**Comparison:** MIT and BSD are permissive licenses: they allow commercial use, modification, and redistribution, provided that relevant notices and disclaimers are included. Apache 2.0 is also a permissive license, with the addition of explicit patent terms and requirements regarding changes and a "NOTICE" file. The LGPL allows commercial use but imposes specific conditions when the library—or a modified version of it—is distributed. A repository's license does not automatically cover the data, training weights, or various dependencies contained within it.
+
+## Exercise 2: Drafting Your Own License
+
+**Emotion Text Model Community License (ETMCL) — Draft**
+
+**1. Scope.** Any individual or organization may use the "Emotion Text Model"—along with its accompanying source code, documentation, and model weights (collectively, the "Model")—subject to compliance with this license.
+
+**2. Granted Rights.** You may use this Model for personal, academic, research, or commercial purposes. You may copy, modify, and redistribute the Model (or modified versions thereof), whether in source code or compiled form, and you may distribute it as part of a larger product.
+
+**3. Your Obligations.** ** When redistributing copies, you must retain this license agreement and any existing copyright notices. Please provide appropriate attribution to this project—for example, by stating: "Includes Emotion Text Model." If you make significant modifications to the model, you must clearly indicate them. If you distribute a modified version of the model, you must provide the corresponding source code for those modifications under the terms of this license. You may not imply that the author endorses your product.
+
+**4. Prohibited Uses.** This model may not be used to make—or to automate the processing of—decisions that have a significant impact on individuals (such as those related to hiring, credit, education, housing, insurance, or law enforcement) without effective human oversight and a verified process. Model outputs may not be presented as reliable diagnostic conclusions or used as a basis for determining an individual's actual emotional state. You may not remove relevant disclaimers, nor may you use the author’s name or branding to imply endorsement of your product.
+
+**5. Breach and Termination.** If you commit a material breach of the terms of this license, your rights under this agreement will automatically terminate. These rights may be reinstated if the breach is corrected within 30 days of your becoming aware of it. The author reserves the right to seek remedies permitted by applicable law. This model is provided "as is"; to the maximum extent permitted by law, it is provided without any warranties or liability.
+
+**6. Scope.** This license applies only to materials explicitly identified as components of this model. It does not grant any rights regarding third-party datasets, trademarks, or components subject to separate licensing terms. This draft is intended solely as a classroom exercise and does not constitute legal advice.
+
+### Rationale for These Terms
+
+I have opted for relatively broad permissions regarding commercial use, modification, and redistribution, with the goal of enabling students, researchers, and businesses to utilize and improve the model. By requiring attribution, documentation of changes, and the sharing of modified source code, the process ensures transparency regarding subsequent alterations and allows others to benefit from improvements. Furthermore, I have included safeguards concerning decisions that could have a significant impact—specifically addressing claims or assertions about "emotional
+certainty"—given that text-based emotion prediction can be prone to error and may affect individuals. Incorporating a "termination clause with a rectification period (grace period)" allows for a clear response to non-compliance while providing an opportunity to remedy unintentional breaches. This mechanism facilitates access and collaboration while simultaneously establishing boundaries through "responsible use" restrictions. In practical projects, such language should be reviewed by a qualified attorney; it is particularly important to note that certain customized restrictions could potentially disqualify a license from being classified as an "open-source license."
+
+---
+
+*This content is provided for educational and comparative purposes only. It serves as a summary and does not constitute legal advice. Please consult the original text of the relevant license agreements and carefully review the documentation and dependencies applicable to your specific use case.*
